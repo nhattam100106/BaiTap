@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: url('aquarium_images/hồ\ cá.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.shark{
+    position: absolute;
+    left: -10%;
+    top: 20%;
+    animation: sharkMove ease-out 15s infinite;
+}
+@keyframes sharkMove{
+    0%{
+        top: 20%;
+        left: -10%;
+    }
+    100%{
+        top: 20%;
+        left: 110%;
+    }
+}
+.diver1{
+        position: absolute;
+        left: -10%;
+        bottom: 20%;
+        animation: diver1Move linear 20s infinite;
+    }
+    @keyframes diver1Move{
+        0%{
+            left: 20%;
+            bottom: -10%;
+        }
+        100%{
+            left: 20%;
+            bottom: 110%;
+        }
+    }
+.diver2{
+         position: absolute;
+         right: -50%;
+         top: 20%;
+        animation: diver2Move linear 30s infinite;
+    }
+     @keyframes diver2Move{
+        0%{
+           top: 10%;
+           left: -10%;
+        }
+        100%{
+            top: 90%;
+            left: 100%;
+        }
+    }
+.diver3{
+    position: absolute;
+    right: -50%;
+    top: 20%;
+    animation: diver3Move linear 30s infinite;
+}
+@keyframes diver3Move{
+    0%{
+        right: 10%;
+        top: -10%;
+    }
+    100%{
+        top: 90%;
+        right: 100%;
+    }
+}
+.turtle{
+    position: absolute;
+    top: -10%;
+    right: 110%;
+    animation: turtleMove linear 40s infinite;
+}
+@keyframes turtleMove{
+    0%{
+        top: 110%;
+        right: -10%;
+    }
+    100%{
+        top: 10%;
+        right: 110%;
+    } 
+}
+.goldfish{
+    position: absolute;
+    top: -10%;
+    left: 110%;
+    animation: goldfishMove linear 15s infinite;
+}
+@keyframes goldfishMove{
+    0%{
+        top: 110%;
+        left: -10%;
+    }
+    100%{
+        top: 10%;
+        left: 110%;
+    } 
+}
